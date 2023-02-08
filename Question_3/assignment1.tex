@@ -172,11 +172,17 @@ Let's answer the following questions in your writeup:
     \item How many total records are there? - Answer: the total record of movies is: 17770; the total record of users is: 480189.
     \item Can you plot the distribution of star ratings over users and time? The granularity of the sliding window is at your discretion. Are there any trends?- Answer: from the plot in Fig.~\ref{fig:plot1}, we have known that there are more and more audiences rate the movie over time.
     \item What percentage of the films have gotten \emph{more} popular over time? - Answer: 17470 films exist in the "qualify" record, which refers to this amount of film get user's reviews and represent popularity. Since the total films in record is 17770, ther percentage of film have gotten more popular over time is: 17470/17770, result is approximate 98%. 
+% Not deducting any points here, but this seems quite high! I have a hard time believing the result.
     \item How many films have been re-released? How do you know? - Answer: there are approximately 309 films have been re-released. The process is starting with finding the duplicate name in the dataset "movie-title". However, since it is hard to find exact match of the duplicate name, I filtered the data down to only use the name that contain space, which will increase the possibility of exact match.
+% KN: It'd be great to show the work here. I don't see anything in the repository.
     \item What other information might we try to extract to better understand the data? For the questions that you may come up with (especially any time series data), make sure you back up your assertions with plots. Go ahead and play around with the data, and explore. - Answer: We might try to explore the relationship between amount of users that make rate for each film and the average star rate of each film to see the relationship between "popularity" and rating. 
     \item What are some interesting problems that we might solve? (No need to actually solve them!) - Answer: we can analysis the dataset and see if the highest-rating movies is affected by time? Are they popular since released or just popular between a specific time range? This can help us to learn more about audience's taste towards a movie.
 \end{enumerate}
 
+
+% KN
+%
+% Tip: You need to set the size with includegraphics.
 \begin{figure}
     \centering
     \includegraphics{images/hw1q3_2_2.png}
